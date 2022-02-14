@@ -40,12 +40,97 @@ ul {
 body {
   background: #333;
   color: white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+button, select {
+  outline: none;
+}
+
+body.light {
+  background: #e4e5f1;
+  color: #111;
+}
+
+body.light .nav {
+  background-color: rgba(255, 255, 255, 0.7) !important;
+}
+
+body.light .nav select {
+  background-color: #d2d3db !important;
+  color: black !important;
+}
+
+body.light .nav select option {
+  background-color: #d2d3db !important;
+  color: black !important;
+}
+
+body.light input {
+  background: #d2d3db;
+  color: #111;
+}
+
+body.light input:focus {
+  background-color: #fafafa;
+}
+
+body.light #total {
+  background-color: #9394a5 !important;
+}
+
+body.light table button {
+  background-color: #9394a5 !important;
+}
+
+body.dark-blue {
+  background: #11003a;
+  color: #bffffa;
+}
+
+body.dark-blue .nav {
+  background-color: rgba(16, 6, 44, 0.7) !important;
+}
+
+body.dark-blue .nav select {
+  background-color: #bffffa !important;
+  color: black !important;
+}
+
+body.dark-blue .nav select option {
+  background-color: #bffffa !important;
+  color: black !important;
+}
+
+body.dark-blue input {
+  background: #070027;
+  color: #bffffa;
+}
+
+body.dark-blue input:focus {
+  background-color: #04001b;
+}
+
+body.dark-blue #total {
+  background-color: #0c1053 !important;
+}
+
+body.dark-blue table button {
+  background-color: #0c1053 !important;
 }
 
 .app {
   width: 80%;
   margin: auto;
   min-height: calc(100vh - 10px);
+  overflow: hidden;
+}
+
+@media (max-width: 900px) {
+  .app {
+    width: 95%;
+  }
 }
 
 .app .head {
@@ -56,6 +141,63 @@ body {
 
 .app .head h2 {
   letter-spacing: 2px;
+}
+
+.app .head .nav__open {
+  position: absolute;
+  right: 19px;
+  top: 19px;
+  padding: 1px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.app .head .nav {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  position: absolute;
+  right: 0%;
+  top: 0;
+  width: 50%;
+  display: none;
+  height: 100%;
+  background-color: rgba(17, 17, 17, 0.9);
+}
+
+@media (max-width: 900px) {
+  .app .head .nav {
+    width: 100%;
+  }
+}
+
+.app .head .nav__close {
+  cursor: pointer;
+  position: absolute;
+  right: 19px;
+  top: 19px;
+  padding: 1px;
+}
+
+.app .head .nav__title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  letter-spacing: 5px;
+}
+
+.app .head .nav__content select {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  height: 30px;
+  margin-left: 5px;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+}
+
+.app .head .nav__content select option {
+  background-color: #333;
+  color: white;
 }
 
 .app input {
@@ -123,10 +265,22 @@ body {
   gap: 10px;
 }
 
+.app .outputs .table-box {
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  .app .outputs .table-box {
+    font-size: small;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+}
+
 .app .outputs table {
   border-radius: 5px;
-  width: 100%;
   text-align: center;
+  width: 100%;
 }
 
 .app .outputs table th {

@@ -1,0 +1,57 @@
+body.light{
+    background: $body-light-bg;
+    color: #111;
+    .nav{
+        background-color: rgba($color: white, $alpha: 0.7)!important;
+        select{
+            background-color: #d2d3db!important;
+            color: black!important;
+            option{
+                background-color: #d2d3db!important;
+                color: black!important;
+            }
+        }
+    }
+    input{
+        background: #d2d3db;
+        color: #111;
+        &:focus{
+            background-color: #fafafa;
+        }
+    }
+    #total{
+        background-color: #9394a5!important;
+    }
+    table button{
+        background-color: #9394a5!important;
+    }
+}
+
+body.dark-blue{
+    background: $body-darkblue-bg;
+    color: rgb(191, 255, 250);
+    .nav{
+        background-color: rgba($color: rgb(16, 6, 44), $alpha: 0.7)!important;
+        select{
+            background-color: rgb(191, 255, 250)!important;
+            color: black!important;
+            option{
+                background-color: rgb(191, 255, 250)!important;
+                color: black!important;
+            }
+        }
+    }
+    input{
+        background: rgb(7, 0, 39);
+        color: rgb(191, 255, 250);;
+        &:focus{
+            background-color: rgb(4, 0, 27);
+        }
+    }
+    #total{
+        background-color: #0c1053!important;
+    }
+    table button{
+        background-color: #0c1053!important;
+    }
+}

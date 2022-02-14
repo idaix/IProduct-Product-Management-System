@@ -2,6 +2,10 @@
     width: 80%;
     margin: auto;
     min-height: calc(100vh - 10px);
+    overflow: hidden;
+    @media (max-width: 900px) {
+        width: 95%;
+    }
     //head
     .head{
         text-align: center;
@@ -9,6 +13,57 @@
         margin: 10px 0;
         h2{
             letter-spacing: 2px;
+        }
+        .nav__open{
+            position: absolute;
+            right: 19px;
+            top: 19px;
+            padding: 1px;
+            cursor: pointer;
+            overflow: hidden;
+        }
+        .nav{
+            transition: $main-transition;
+            position: absolute;
+            right: 0%;
+            top: 0;
+            width: 50%;
+            display: none;
+            @media (max-width: 900px) {
+                width: 100%;
+            }
+            height: 100%;
+            background-color: rgba($color: #111, $alpha: 0.9);
+            &__close{
+                cursor: pointer;
+                position: absolute;
+                right: 19px;
+                top: 19px;
+                padding: 1px;
+                
+            }
+            &__title{
+                margin-top: 10px;
+                margin-bottom: 10px;
+                letter-spacing: 5px;
+            }
+
+            &__content{
+                select{
+                    padding: 5px;
+                    border-radius: 5px;
+                    border: none;
+                    height: 30px;
+                    margin-left: 5px;
+                    background-color: #333;
+                    color: white;
+                    cursor: pointer;
+                    option{
+                        background-color: #333;
+                        color: white;
+                    }
+                }
+            }
         }
     }
     //inputs
@@ -65,10 +120,18 @@
                 gap: 10px;
             }
         }
+        .table-box{
+            width: 100%;
+            @media (max-width: 900px) {
+                font-size: small;
+                overflow-x: auto;
+                overflow-y: hidden;
+            }
+        }
         table{
             border-radius: 5px;
-            width: 100%;
             text-align: center;
+            width: 100%;
             th{
                 text-transform: uppercase;
             }
