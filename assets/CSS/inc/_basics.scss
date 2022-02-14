@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: $main-font;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+ul{
+    list-style: none;
+}
+.btn{
+    background-color: $main-color;
+    cursor: pointer;
+    padding: 10px 25px;
+    color: white;
+    font-weight: bold;
+    transition: $main-transition;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    &:hover{
+        background-color: $main-color-alt;
+    }
+}
+body{
+    background: $body-bg;
+    color: white;
+}
