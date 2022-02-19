@@ -120,6 +120,52 @@ body.dark-blue table button {
   background-color: #0c1053 !important;
 }
 
+body.marvel {
+  background-color: #000;
+  color: #518cca;
+}
+
+body.marvel button {
+  background-color: #e23636;
+}
+
+body.marvel button:hover {
+  background-color: #cb3030;
+}
+
+body.marvel .nav select {
+  background-color: #e23636 !important;
+}
+
+body.marvel .nav select option {
+  background-color: #e23636 !important;
+}
+
+body.marvel input {
+  background: #504a4a;
+  color: white;
+}
+
+body.marvel input::-webkit-input-placeholder {
+  color: #fafafa;
+}
+
+body.marvel input:-ms-input-placeholder {
+  color: #fafafa;
+}
+
+body.marvel input::-ms-input-placeholder {
+  color: #fafafa;
+}
+
+body.marvel input::placeholder {
+  color: #fafafa;
+}
+
+body.marvel input:focus {
+  background-color: #4070a1;
+}
+
 .app {
   width: 80%;
   margin: auto;

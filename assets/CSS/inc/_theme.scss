@@ -55,3 +55,33 @@ body.dark-blue{
         background-color: #0c1053!important;
     }
 }
+
+body.marvel{
+    background-color: $body-marvel-bg;
+    color: #518cca;
+    button{
+        background-color: $marvel-main-color;
+        &:hover{
+            background-color: $marvel-main-alt-color;
+        }
+    }
+    .nav{
+        select{
+            background-color: $marvel-main-color!important;
+            option{
+                background-color: $marvel-main-color!important;
+            }
+        }
+    }
+    input{
+        background: #504a4a;
+        color: white;
+        &::placeholder{
+            color: #fafafa;
+        }
+        &:focus{
+            background-color: #4070a1;
+            
+        }
+    }
+}
